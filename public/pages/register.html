@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Ahli | Sistem Tabungan Komuniti</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-card">
+            <div class="register-header">
+                <h2>Daftar Ahli Baru</h2>
+                <p class="subtitle">Sila lengkapkan maklumat pendaftaran</p>
+            </div>
+            <form id="registerForm" class="register-form">
+                <div class="input-group">
+                    <input type="text" id="userId" required>
+                    <label for="userId">ID Pengguna</label>
+                    <span class="highlight"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Kata Laluan</label>
+                    <span class="highlight"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" required>
+                    <label for="confirmPassword">Sahkan Kata Laluan</label>
+                    <span class="highlight"></span>
+                </div>
+                <button type="submit" class="register-btn">Daftar</button>
+            </form>
+            <a href="../index.html" class="back-link">← Kembali ke Halaman Utama</a>
+        </div>
+    </div>
+    <script type="module" src="../js/register.js"></script>
+</body>
+</html>

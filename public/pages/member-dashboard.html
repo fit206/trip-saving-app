@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Ahli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/member-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="user-info">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 id="userName">Ahli</h3>
+            </div>
+            <ul class="nav-links">
+                <li class="active">
+                    <a href="#overview"><i class="fas fa-home"></i> Paparan Utama</a>
+                </li>
+                <li>
+                    <a href="#history"><i class="fas fa-history"></i> Sejarah Transaksi</a>
+                </li>
+                <li>
+                    <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Log Keluar</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Dashboard Ahli</h1>
+            </header>
+
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Jumlah Simpanan</h3>
+                        <p id="totalSavings">RM 0.00</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="../js/member.js"></script>
+</body>
+</html>

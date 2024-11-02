@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Tabungan Komuniti</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="particles"></div> <!-- Added particles container -->
+
+    <div class="container">
+        <div class="login-container">
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="Tabung Trip Logo" class="animated-logo">
+            </div>
+            <div class="button-group">
+                <button onclick="window.location.href='./pages/login.html?type=member'">Log Masuk Ahli</button>
+                <button onclick="window.location.href='./pages/login.html?type=admin'">Log Masuk Admin</button>
+                <button onclick="window.location.href='./pages/register.html'">Daftar Ahli Baru</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Create floating particles
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.width = Math.random() * 30 + 'px';
+            particle.style.height = particle.style.width;
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            document.querySelector('.particles').appendChild(particle);
+        }
+    </script>
+</body>
+</html>
